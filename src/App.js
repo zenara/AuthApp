@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import firebase from 'firebase';
+import LoginForm from './components/LoginForm'
 
 
 type Props = {};
@@ -20,6 +21,7 @@ export default class App extends Component<Props> {
       <View style={styles.container}>
         <Text style={styles.welcome}>Welcome to React Native!</Text>
         <Text style={styles.instructions}>To get started, edit App.js</Text>
+        <LoginForm/>
       </View>
     );
   }
